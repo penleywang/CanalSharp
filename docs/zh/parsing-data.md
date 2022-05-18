@@ -45,7 +45,7 @@ catch (Exception e)
 }
 ````
 
-通过 `RowChange.EventType ` 来Row是什么变化，Update、Delete和 Insert 对应 sql 中的 update、delete 和 insert 语句
+通过 `RowChange.EventType ` 来区分Row是什么变化，Update、Delete和 Insert 对应 sql 中的 update、delete 和 insert 语句
 
 通过 `RowChange.RowDatas` 属性，来访问 RowChange 对象中包含的行变化数据集合。
 
@@ -98,7 +98,7 @@ Column 如其名，代表数据库中表的每一列的信息。
 ````csharp
 Column.Name = 'Name';
 Column.Value = 'Allen';
-Column.Value = True
+Column.Updated = True
 ````
 
 
